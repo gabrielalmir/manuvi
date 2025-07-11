@@ -244,7 +244,7 @@ describe('Login Page', () => {
     render(<LoginPage />)
 
     fireEvent.change(screen.getByLabelText(/email/i), {
-      target: { value: 'admin@manuvi.com' }
+      target: { value: 'admin@manuvi.com.br' }
     })
 
     fireEvent.change(screen.getByLabelText(/senha/i), {

@@ -34,7 +34,7 @@ Bem-vindo à documentação completa do **Manuvi** - Plataforma Inteligente de P
 
 ### Para Usuários
 1. Acesse a aplicação em `http://localhost:3000`
-2. Utilize as credenciais demo: `admin@manuvi.com` / `admin123`
+2. Utilize as credenciais demo: `admin@manuvi.com.br` / `admin123`
 3. Explore as funcionalidades através do **[Sistema de Autenticação](./AUTH.md)**
 
 ## 🏗️ Estrutura do Projeto
@@ -122,15 +122,15 @@ manuvi/
 ## 📞 Suporte
 
 ### 📧 Contatos
-- **Desenvolvimento**: dev@manuvi.com
-- **Produto**: product@manuvi.com
-- **Suporte**: support@manuvi.com
+- **Desenvolvimento**: dev@manuvi.com.br
+- **Produto**: product@manuvi.com.br
+- **Suporte**: support@manuvi.com.br
 
 ### 🔗 Links Úteis
 - **GitHub**: https://github.com/manuvi/manuvi
-- **Documentação Online**: https://docs.manuvi.com
-- **Demo**: https://demo.manuvi.com
-- **Status**: https://status.manuvi.com
+- **Documentação Online**: https://docs.manuvi.com.br
+- **Demo**: https://demo.manuvi.com.br
+- **Status**: https://status.manuvi.com.br
 
 ### 💬 Comunidade
 - **Discord**: https://discord.gg/manuvi

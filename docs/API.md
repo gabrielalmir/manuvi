@@ -563,7 +563,7 @@ curl -X POST http://localhost:8000/planning/generate \
 
 ### CORS
 ```
-Access-Control-Allow-Origin: https://app.manuvi.com
+Access-Control-Allow-Origin: https://app.manuvi.com.br
 Access-Control-Allow-Methods: GET, POST, PUT, DELETE
 Access-Control-Allow-Headers: Content-Type, Authorization, X-Tenant-ID
 ```
@@ -579,6 +579,6 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains
 ## 🆘 Suporte
 
 Para dúvidas sobre a API:
-- 📧 Email: api-support@manuvi.com
-- 📖 Documentação: https://docs.manuvi.com
+- 📧 Email: api-support@manuvi.com.br
+- 📖 Documentação: https://docs.manuvi.com.br
 - 🐛 Issues: https://github.com/manuvi/manuvi/issues

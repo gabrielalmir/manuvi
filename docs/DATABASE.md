@@ -510,6 +510,6 @@ SELECT pg_size_pretty(pg_database_size('manuvi'));
 ```
 
 ### Contato
-- **DBA**: dba@manuvi.com
-- **Suporte**: support@manuvi.com
-- **Docs**: https://docs.manuvi.com/database
+- **DBA**: dba@manuvi.com.br
+- **Suporte**: support@manuvi.com.br
+- **Docs**: https://docs.manuvi.com.br/database
