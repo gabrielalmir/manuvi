@@ -15,27 +15,14 @@ This project is born from the vision to **go beyond ERPs**, offering:
 
 ---
 
-## 🧱 Tech Stack (MVP)
-
-| Layer        | Tech                         |
-|--------------|------------------------------|
-| Frontend     | [Next.js](https://nextjs.org/) (App Router) + [Tailwind CSS](https://tailwindcss.com/)
-| State        | [Zustand](https://zustand-demo.pmnd.rs/)
-| Icons        | [Lucide](https://lucide.dev/)
-| Animations   | [Framer Motion](https://www.framer.com/motion/)
-| Backend (later) | Python (FastAPI or custom logic)
-| Planning Logic | Custom algorithms (Python or JS-based for now)
-
----
-
 ## 📦 Features (MVP Scope)
 
-- 🔒 Tenant-based authentication (mocked or simple token for now)
-- 🧾 Product registration (processing time, setup, lot size)
-- ⚙️ Machine registration (capacity, shifts)
-- 📋 Production order management (priority, due date)
-- 🧠 Basic production planning algorithm
-- 📊 Plan visualization (table or Gantt-style)
-- 📤 Export to CSV/JSON
+- Tenant-based authentication (mocked or simple token for now)
+- Product registration (processing time, setup, lot size)
+- Machine registration (capacity, shifts)
+- Production order management (priority, due date)
+- Basic production planning algorithm
+- Plan visualization (table or Gantt-style)
+- Export to CSV/JSON
 
 
