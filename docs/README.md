@@ -58,30 +58,6 @@ manuvi/
 └── README.md
 ```
 
-## 📊 Status da Documentação
-
-### ✅ Completa
-- [x] Arquitetura geral
-- [x] Guia de desenvolvimento
-- [x] API documentation
-- [x] Banco de dados
-- [x] Sistema de autenticação
-
-### 🚧 Em Desenvolvimento
-- [ ] Algoritmos de planejamento
-- [ ] Multi-tenancy
-- [ ] Relatórios e dashboards
-- [ ] Testes e qualidade
-- [ ] Deploy e CI/CD
-- [ ] Monitoramento
-
-### 🔮 Planejado
-- [ ] Mobile app
-- [ ] Integrações ERP
-- [ ] Machine learning
-- [ ] IoT devices
-- [ ] Advanced analytics
-
 ## 🎯 Público-Alvo
 
 ### 👨‍💻 Desenvolvedores
@@ -119,32 +95,17 @@ manuvi/
 3. Priorize com base no impacto
 4. Teste thoroughly antes de submeter
 
-## 📞 Suporte
-
-### 📧 Contatos
-- **Desenvolvimento**: dev@manuvi.com.br
-- **Produto**: product@manuvi.com.br
-- **Suporte**: support@manuvi.com.br
+## 📞 Suporte - Planejado
 
 ### 🔗 Links Úteis
-- **GitHub**: https://github.com/manuvi/manuvi
+- **GitHub**: https://github.com/gabrielalmir/manuvi
 - **Documentação Online**: https://docs.manuvi.com.br
 - **Demo**: https://demo.manuvi.com.br
 - **Status**: https://status.manuvi.com.br
 
 ### 💬 Comunidade
-- **Discord**: https://discord.gg/manuvi
-- **GitHub Discussions**: https://github.com/manuvi/manuvi/discussions
-- **LinkedIn**: https://linkedin.com/company/manuvi
-
-## 📈 Métricas da Documentação
-
-### 📊 Cobertura
-- **Arquitetura**: 95%
-- **API**: 90%
-- **Frontend**: 85%
-- **Backend**: 80%
-- **Deploy**: 60%
+- **GitHub Discussions**: https://github.com/gabrielalmir/manuvi/discussions
+- **LinkedIn**: https://linkedin.com/in/gabrielalmir
 
 ### 🎯 Objetivos
 - Manter 90%+ de cobertura
@@ -159,23 +120,3 @@ manuvi/
 - **Documentação**: Versionada junto com código
 - **Breaking Changes**: Claramente documentados
 - **Migration Guides**: Para versões major
-
-### Histórico
-- **v0.1.0**: Setup inicial e arquitetura
-- **v0.2.0**: Sistema de autenticação
-- **v0.3.0**: Planejamento básico *(planejado)*
-- **v1.0.0**: MVP completo *(planejado)*
-
-## 🏆 Agradecimentos
-
-Obrigado a todos os contribuidores que tornaram este projeto possível:
-- Desenvolvedores da comunidade
-- Beta testers
-- Reviewers de documentação
-- Usuários que reportaram bugs
-
----
-
-**Última atualização**: Janeiro 2024
-**Versão da documentação**: 0.2.0
-**Próxima revisão**: Fevereiro 2024
