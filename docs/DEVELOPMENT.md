@@ -18,7 +18,7 @@ Refer to the original Portuguese sections below for full commands and file struc
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/seu-usuario/manuvi.git
+git clone https://github.com/gabrielalmir/manuvi.git
 cd manuvi
 ```
 
