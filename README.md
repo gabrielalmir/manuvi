@@ -26,3 +26,14 @@ This project is born from the vision to **go beyond ERPs**, offering:
 - Export to CSV/JSON
 
 
+## ⚠️ Notice on Licensing and Project Direction
+
+This project is currently open source and serves as a portfolio example.
+You are welcome to analyze, get inspired, and use this software under the AGPL v3 license.
+
+However, please note:
+- If I see commercial potential, future versions will become private and will no longer be published as open source.
+- The current public version will remain available under the AGPL v3 license for everyone who has access to it.
+- No further open source updates or public domain releases are guaranteed.
+
+For commercial licensing or questions, contact: [https://linkedin.com/in/gabrielalmir](https://linkedin.com/in/gabrielalmir)
