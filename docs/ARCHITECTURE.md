@@ -1,8 +1,13 @@
-# 🏗️ Arquitetura do Manuvi
+# :building_construction: Arquitetura do Manuvi
 
-## Visão Geral
+## :bookmark_tabs: Visão Geral
 
-O **Manuvi** é uma plataforma de planejamento de produção inteligente construída com uma arquitetura moderna e escalável. O projeto utiliza uma abordagem full-stack com separação clara entre frontend e backend.
+O **Manuvi** é uma plataforma de planejamento de produção inteligente, estruturada em frontend (Next.js/TypeScript) e backend (Python). Algumas partes descritas nesta arquitetura estão planejadas, mas podem não estar implementadas. Veja referências ao final de cada seção.
+
+## :information_source: Estado Atual
+
+- O frontend implementa páginas principais, autenticação simulada e navegação ([README.md](../README.md), [DEVELOPMENT.md](./DEVELOPMENT.md)).
+- O backend possui modelagem de entidades, mas integrações reais com banco, autenticação JWT e endpoints RESTful podem estar incompletos ([API.md](./API.md), [DATABASE.md](./DATABASE.md)).
 
 ## 🎯 Princípios Arquiteturais
 
@@ -31,7 +36,11 @@ manuvi/
 └── README.md          # Documentação principal
 ```
 
-## 🎨 Frontend (Next.js)
+## 🖥️ Frontend (Next.js)
+
+- Estrutura baseada em Next.js 14, TypeScript, Tailwind, Zustand ([DEVELOPMENT.md](./DEVELOPMENT.md)).
+- Páginas: autenticação (mock), dashboard, produtos, máquinas, ordens, planejamento, relatórios, equipe ([README.md](../README.md)).
+- Não há integração real com backend; dados e autenticação são simulados ([AUTH.md](./AUTH.md)).
 
 ### Stack Tecnológico
 - **Framework**: Next.js 14 (App Router)
@@ -82,7 +91,11 @@ src/
 - Contexto de tenant
 - Estado reativo
 
-## 🐍 Backend (Python)
+## :snake: Backend (Python)
+
+- Estrutura de entidades com dataclasses ([DEVELOPMENT.md](./DEVELOPMENT.md)).
+- FastAPI, PostgreSQL, Redis, Alembic estão planejados, mas podem não estar implementados ([DATABASE.md](./DATABASE.md)).
+- Endpoints RESTful e autenticação JWT descritos, mas podem não estar 100% funcionais ([API.md](./API.md), [AUTH.md](./AUTH.md)).
 
 ### Stack Tecnológico
 - **Linguagem**: Python 3.11+
@@ -226,3 +239,6 @@ Dados de Entrada → Algoritmo de Planejamento → Plano Otimizado → Visualiza
 - Docstrings
 - Comentários inline
 - README por módulo
+
+## :warning: Observação
+Esta arquitetura reflete o projeto como portfólio, com partes planejadas e outras implementadas de forma simulada. Para detalhes, consulte os arquivos referenciados.

@@ -1,6 +1,11 @@
-# 🛠️ Guia de Desenvolvimento - Manuvi
+# :hammer_and_wrench: Guia de Desenvolvimento - Manuvi
 
-## Pré-requisitos
+## :information_source: Estado Atual
+
+- O frontend está funcional para navegação, autenticação simulada e visualização de páginas principais ([ARCHITECTURE.md](./ARCHITECTURE.md), [README.md](../README.md)).
+- O backend possui modelagem de entidades, mas integrações reais com banco, autenticação JWT e endpoints RESTful podem estar incompletos ([API.md](./API.md), [DATABASE.md](./DATABASE.md)).
+
+## :pushpin: Pré-requisitos
 
 ### Sistema Operacional
 - Windows 10/11, macOS 10.15+, ou Linux (Ubuntu 20.04+)
@@ -29,7 +34,7 @@
 }
 ```
 
-## 🚀 Configuração Inicial
+## :rocket: Configuração Inicial
 
 ### 1. Clonar o Repositório
 ```bash
@@ -74,7 +79,7 @@ JWT_SECRET=your-jwt-secret-here
 ENVIRONMENT=development
 ```
 
-## 🏃‍♂️ Executando o Projeto
+## :arrow_forward: Execução
 
 ### Frontend (Development)
 ```bash
@@ -462,3 +467,6 @@ pip install -r requirements.txt
 - **Discussões**: GitHub Discussions
 - **Documentação**: Pasta `/docs`
 - **Contato**: gabr.almir@gmail.com
+
+## :warning: Observação
+Este guia reflete o estado realista do projeto, com partes implementadas e outras planejadas. Consulte os arquivos referenciados para detalhes.

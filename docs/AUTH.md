@@ -1,4 +1,15 @@
-# 🔐 Sistema de Autenticação - Manuvi
+# :lock: Sistema de Autenticação - Manuvi
+
+## :information_source: Estado Atual
+- O frontend implementa telas de autenticação (login, cadastro, recuperação de senha) com validação e feedback, mas a autenticação é simulada/local, sem integração real com backend ([ARCHITECTURE.md](./ARCHITECTURE.md), [README.md](../README.md)).
+- O backend possui endpoints e lógica de autenticação descritos, mas podem não estar 100% funcionais ([API.md](./API.md)).
+
+## :link: Referências
+- [ARCHITECTURE.md](./ARCHITECTURE.md)
+- [README.md](../README.md)
+- [API.md](./API.md)
+
+---
 
 ## Visão Geral
 

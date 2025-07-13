@@ -1,4 +1,15 @@
-# 🗄️ Documentação do Banco de Dados - Manuvi
+# :card_file_box: Documentação do Banco de Dados - Manuvi
+
+## :information_source: Estado Atual
+- A documentação apresenta modelagem e exemplos de tabelas, mas integrações reais com PostgreSQL, Redis e InfluxDB podem estar planejadas e não implementadas ([ARCHITECTURE.md](./ARCHITECTURE.md), [DEVELOPMENT.md](./DEVELOPMENT.md)).
+- O backend possui entidades modeladas, mas a persistência real pode estar incompleta ([README.md](../README.md)).
+
+## :link: Referências
+- [ARCHITECTURE.md](./ARCHITECTURE.md)
+- [DEVELOPMENT.md](./DEVELOPMENT.md)
+- [README.md](../README.md)
+
+---
 
 ## Visão Geral
 

@@ -1,4 +1,17 @@
-# 🔌 API Documentation - Manuvi
+# :electric_plug: API Documentation - Manuvi
+
+## :information_source: Estado Atual
+- A documentação descreve endpoints RESTful, autenticação JWT e operações multi-tenant, mas nem todos podem estar implementados ou funcionais ([ARCHITECTURE.md](./ARCHITECTURE.md), [DEVELOPMENT.md](./DEVELOPMENT.md)).
+- O backend possui modelagem de entidades, mas integrações reais com banco e autenticação podem estar incompletas ([DATABASE.md](./DATABASE.md)).
+
+## :link: Referências
+- [ARCHITECTURE.md](./ARCHITECTURE.md)
+- [DEVELOPMENT.md](./DEVELOPMENT.md)
+- [DATABASE.md](./DATABASE.md)
+
+---
+
+<!-- O restante da documentação de endpoints permanece para referência e consulta futura. -->
 
 ## Visão Geral
 
