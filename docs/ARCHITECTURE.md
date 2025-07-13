@@ -1,13 +1,13 @@
-# :building_construction: Arquitetura do Manuvi
+# :building_construction: Manuvi Architecture
 
-## :bookmark_tabs: Visão Geral
+## :bookmark_tabs: Overview
 
-O **Manuvi** é uma plataforma de planejamento de produção inteligente, estruturada em frontend (Next.js/TypeScript) e backend (Python). Algumas partes descritas nesta arquitetura estão planejadas, mas podem não estar implementadas. Veja referências ao final de cada seção.
+**Manuvi** is an intelligent production-planning platform composed of a Next.js front-end and a Python back-end. Some components described below are still **planned** – the document indicates where functionality is not yet available in the codebase.
 
-## :information_source: Estado Atual
+## :information_source: Current Status
 
-- O frontend implementa páginas principais, autenticação simulada e navegação ([README.md](../README.md), [DEVELOPMENT.md](./DEVELOPMENT.md)).
-- O backend possui modelagem de entidades, mas integrações reais com banco, autenticação JWT e endpoints RESTful podem estar incompletos ([API.md](./API.md), [DATABASE.md](./DATABASE.md)).
+- **Front-end** – Core pages are in place (mock authentication, dashboard, products, machines, orders, planning, reports, team). See [README](../README.md) and [Development Guide](./DEVELOPMENT.md).
+- **Back-end** – Domain entities are implemented, while the API layer, database integration and JWT authentication are *work in progress* (see [API](./API.md) and [Database](./DATABASE.md)).
 
 ## 🎯 Princípios Arquiteturais
 

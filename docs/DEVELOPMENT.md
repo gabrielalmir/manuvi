@@ -1,54 +1,34 @@
-# :hammer_and_wrench: Guia de Desenvolvimento - Manuvi
+# :hammer_and_wrench: Development Guide – Manuvi
 
-## :information_source: Estado Atual
+## :information_source: Current Status
 
-- O frontend está funcional para navegação, autenticação simulada e visualização de páginas principais ([ARCHITECTURE.md](./ARCHITECTURE.md), [README.md](../README.md)).
-- O backend possui modelagem de entidades, mas integrações reais com banco, autenticação JWT e endpoints RESTful podem estar incompletos ([API.md](./API.md), [DATABASE.md](./DATABASE.md)).
+- **Front-end** – Ready for local development. Uses mock data and mock authentication only.
+- **Back-end** – Contains domain models; API endpoints and persistence are under construction.
 
-## :pushpin: Pré-requisitos
+## :pushpin: Prerequisites
 
-### Sistema Operacional
-- Windows 10/11, macOS 10.15+, ou Linux (Ubuntu 20.04+)
+- Node.js 18+, npm 9+
+- Python 3.11+
+- Git
+- VS Code (recommended)
 
-### Ferramentas Necessárias
-- **Node.js**: 18.x ou superior
-- **npm**: 9.x ou superior (vem com Node.js)
-- **Python**: 3.11 ou superior
-- **Git**: Para controle de versão
-- **VSCode**: Editor recomendado
+Refer to the original Portuguese sections below for full commands and file structure.
 
-### Extensões VSCode Recomendadas
-```json
-{
-  "recommendations": [
-    "ms-vscode.vscode-typescript-next",
-    "bradlc.vscode-tailwindcss",
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
-    "ms-python.python",
-    "ms-python.flake8",
-    "ms-python.black-formatter",
-    "orta.vscode-jest",
-    "ms-vscode.test-adapter-converter"
-  ]
-}
-```
+## :rocket: Initial Setup
 
-## :rocket: Configuração Inicial
-
-### 1. Clonar o Repositório
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/seu-usuario/manuvi.git
 cd manuvi
 ```
 
-### 2. Configurar o Frontend
+### 2. Configure the Frontend
 ```bash
 cd frontend
 npm install
 ```
 
-### 3. Configurar o Backend
+### 3. Configure the Backend
 ```bash
 cd ../backend
 python -m venv venv
@@ -62,7 +42,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Variáveis de Ambiente
+### 4. Environment Variables
 
 #### Frontend (.env.local)
 ```env
@@ -79,35 +59,35 @@ JWT_SECRET=your-jwt-secret-here
 ENVIRONMENT=development
 ```
 
-## :arrow_forward: Execução
+## :arrow_forward: Execution
 
 ### Frontend (Development)
 ```bash
 cd frontend
 npm run dev
 ```
-Acesse: http://localhost:3000
+Access: http://localhost:3000
 
 ### Backend (Development)
 ```bash
 cd backend
 uvicorn main:app --reload --port 8000
 ```
-API disponível em: http://localhost:8000
+API available at: http://localhost:8000
 
-### Executar Testes
+### Run Tests
 
 #### Frontend
 ```bash
 cd frontend
 
-# Executar todos os testes
+# Run all tests
 npm test
 
-# Executar em modo watch
+# Run in watch mode
 npm run test:watch
 
-# Executar com coverage
+# Run with coverage
 npm run test:coverage
 ```
 
@@ -116,56 +96,56 @@ npm run test:coverage
 cd backend
 pytest
 
-# Com coverage
+# With coverage
 pytest --cov=src --cov-report=html
 ```
 
-## 📁 Estrutura de Desenvolvimento
+## 📁 Development Structure
 
 ### Frontend
 ```
 frontend/
 ├── src/
-│   ├── app/              # Rotas (Next.js App Router)
-│   │   ├── layout.tsx    # Layout raiz
-│   │   ├── page.tsx      # Página inicial
-│   │   ├── globals.css   # Estilos globais
-│   │   └── [módulo]/     # Páginas por módulo
-│   ├── components/       # Componentes reutilizáveis
-│   │   ├── ui/          # Componentes de UI base
-│   │   ├── forms/       # Formulários
-│   │   └── layout/      # Componentes de layout
-│   ├── lib/             # Utilitários e configurações
-│   ├── store/           # Gerenciamento de estado (Zustand)
-│   └── types/           # Definições de tipos TypeScript
-├── public/              # Assets estáticos
-├── __tests__/           # Testes
-└── docs/                # Documentação específica
+│   ├── app/              # Routes (Next.js App Router)
+│   │   ├── layout.tsx    # Root Layout
+│   │   ├── page.tsx      # Home Page
+│   │   ├── globals.css   # Global Styles
+│   │   └── [module]/     # Pages by module
+│   ├── components/       # Reusable Components
+│   │   ├── ui/          # Base UI Components
+│   │   ├── forms/       # Forms
+│   │   └── layout/      # Layout Components
+│   ├── lib/             # Utilities and configurations
+│   ├── store/           # State Management (Zustand)
+│   └── types/           # TypeScript Type Definitions
+├── public/              # Static Assets
+├── __tests__/           # Tests
+└── docs/                # Specific Documentation
 ```
 
 ### Backend
 ```
 backend/
 ├── src/
-│   ├── core/            # Configurações centrais
-│   ├── models/          # Modelos de dados
-│   ├── schemas/         # Schemas Pydantic
-│   ├── services/        # Lógica de negócio
-│   ├── repositories/    # Camada de dados
-│   ├── controllers/     # Controladores HTTP
-│   └── utils/           # Utilitários
-├── tests/               # Testes
-├── migrations/          # Migrações do banco
-└── requirements.txt     # Dependências Python
+│   ├── core/            # Central Configurations
+│   ├── models/          # Data Models
+│   ├── schemas/         # Pydantic Schemas
+│   ├── services/        # Business Logic
+│   ├── repositories/    # Data Layer
+│   ├── controllers/     # HTTP Controllers
+│   └── utils/           # Utilities
+├── tests/               # Tests
+├── migrations/          # Database Migrations
+└── requirements.txt     # Python Dependencies
 ```
 
-## 🔧 Padrões de Código
+## 🔧 Code Standards
 
 ### Frontend (TypeScript/React)
 
-#### Componentes
+#### Components
 ```typescript
-// Componente funcional com TypeScript
+// Functional Component with TypeScript
 interface Props {
   title: string;
   onSubmit: (data: FormData) => void;
@@ -180,7 +160,7 @@ export function Component({ title, onSubmit }: Props) {
 }
 ```
 
-#### Hooks Personalizados
+#### Custom Hooks
 ```typescript
 // hooks/useProducts.ts
 import { useState, useEffect } from 'react';
@@ -190,14 +170,14 @@ export function useProducts() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Lógica de busca
+    // Search logic
   }, []);
 
   return { products, loading };
 }
 ```
 
-#### Estado Global (Zustand)
+#### Global State (Zustand)
 ```typescript
 // store/useStore.ts
 import { create } from 'zustand';
@@ -219,7 +199,7 @@ export const useStore = create<State>((set) => ({
 
 ### Backend (Python)
 
-#### Modelos
+#### Models
 ```python
 # models/product.py
 from pydantic import BaseModel
@@ -228,14 +208,14 @@ from datetime import datetime
 class Product(BaseModel):
     id: int
     name: str
-    production_time: int  # em minutos
-    setup_time: int      # em minutos
+    production_time: int  # in minutes
+    setup_time: int      # in minutes
     batch_size: int
     created_at: datetime
     updated_at: datetime
 ```
 
-#### Serviços
+#### Services
 ```python
 # services/product_service.py
 from typing import List
@@ -253,7 +233,7 @@ class ProductService:
         return await self.repository.get_all()
 ```
 
-#### Controladores
+#### Controllers
 ```python
 # controllers/product_controller.py
 from fastapi import APIRouter, Depends
@@ -269,11 +249,11 @@ async def create_product(
     return await service.create_product(product)
 ```
 
-## 🧪 Testes
+## 🧪 Tests
 
 ### Frontend (Jest + React Testing Library)
 
-#### Teste de Componente
+#### Component Test
 ```typescript
 // __tests__/components/ProductForm.test.tsx
 import { render, screen, fireEvent } from '@testing-library/react';
@@ -283,22 +263,22 @@ describe('ProductForm', () => {
   it('should render form fields', () => {
     render(<ProductForm onSubmit={jest.fn()} />);
 
-    expect(screen.getByLabelText(/nome/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/tempo de produção/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/name/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/production time/i)).toBeInTheDocument();
   });
 
   it('should call onSubmit with form data', () => {
     const onSubmit = jest.fn();
     render(<ProductForm onSubmit={onSubmit} />);
 
-    fireEvent.change(screen.getByLabelText(/nome/i), {
-      target: { value: 'Produto Teste' }
+    fireEvent.change(screen.getByLabelText(/name/i), {
+      target: { value: 'Test Product' }
     });
 
-    fireEvent.click(screen.getByRole('button', { name: /salvar/i }));
+    fireEvent.click(screen.getByRole('button', { name: /save/i }));
 
     expect(onSubmit).toHaveBeenCalledWith({
-      name: 'Produto Teste'
+      name: 'Test Product'
     });
   });
 });
@@ -306,7 +286,7 @@ describe('ProductForm', () => {
 
 ### Backend (pytest)
 
-#### Teste de Serviço
+#### Service Test
 ```python
 # tests/services/test_product_service.py
 import pytest
@@ -336,19 +316,19 @@ async def test_create_product(service, mock_repository):
     mock_repository.create.assert_called_once_with(product)
 ```
 
-## 🔄 Fluxo de Desenvolvimento
+## 🔄 Development Flow
 
-### 1. Criar Branch
+### 1. Create Branch
 ```bash
-git checkout -b feature/nova-funcionalidade
+git checkout -b feature/new-feature
 ```
 
-### 2. Fazer Alterações
-- Implementar código
-- Adicionar testes
-- Atualizar documentação
+### 2. Make Changes
+- Implement code
+- Add tests
+- Update documentation
 
-### 3. Executar Testes
+### 3. Run Tests
 ```bash
 # Frontend
 cd frontend && npm test
@@ -357,42 +337,42 @@ cd frontend && npm test
 cd backend && pytest
 ```
 
-### 4. Commit e Push
+### 4. Commit and Push
 ```bash
 git add .
-git commit -m "feat: adicionar nova funcionalidade"
-git push origin feature/nova-funcionalidade
+git commit -m "feat: add new feature"
+git push origin feature/new-feature
 ```
 
-### 5. Criar Pull Request
-- Usar template de PR
-- Incluir descrição detalhada
-- Marcar reviewers
+### 5. Create Pull Request
+- Use PR template
+- Include detailed description
+- Tag reviewers
 
 ## 📊 Debugging
 
 ### Frontend
 ```typescript
-// Usar React DevTools
+// Use React DevTools
 console.log('Debug info:', { state, props });
 
-// Usar breakpoints no VSCode
+// Use breakpoints in VSCode
 debugger;
 ```
 
 ### Backend
 ```python
-# Usar pdb para debugging
+# Use pdb for debugging
 import pdb; pdb.set_trace()
 
-# Logs estruturados
+# Structured logs
 import logging
 logging.info("Processing request", extra={"user_id": user.id})
 ```
 
-## 🔧 Ferramentas Úteis
+## 🔧 Useful Tools
 
-### Linting e Formatação
+### Linting and Formatting
 ```bash
 # Frontend
 npm run lint
@@ -404,7 +384,7 @@ isort src/
 flake8 src/
 ```
 
-### Análise de Código
+### Code Analysis
 ```bash
 # TypeScript
 npx tsc --noEmit
@@ -416,32 +396,32 @@ mypy src/
 ## 📈 Performance
 
 ### Frontend
-- Usar `React.memo` para componentes
-- Implementar `useMemo` e `useCallback`
-- Otimizar imagens com Next.js Image
+- Use `React.memo` for components
+- Implement `useMemo` and `useCallback`
+- Optimize images with Next.js Image
 
 ### Backend
-- Usar async/await
-- Implementar cache Redis
-- Otimizar queries SQL
+- Use async/await
+- Implement Redis cache
+- Optimize SQL queries
 
 ## 🐛 Troubleshooting
 
-### Problemas Comuns
+### Common Issues
 
 #### Frontend
 ```bash
-# Limpar cache do Next.js
+# Clear Next.js cache
 rm -rf .next
 
-# Reinstalar node_modules
+# Reinstall node_modules
 rm -rf node_modules
 npm install
 ```
 
 #### Backend
 ```bash
-# Recriar ambiente virtual
+# Recreate virtual environment
 rm -rf venv
 python -m venv venv
 source venv/bin/activate
@@ -450,23 +430,23 @@ pip install -r requirements.txt
 
 ### Logs
 - Frontend: Browser DevTools Console
-- Backend: Terminal ou arquivo de log
-- Banco de dados: Logs específicos do PostgreSQL
+- Backend: Terminal or log file
+- Database: Specific PostgreSQL logs
 
-## 🎯 Próximos Passos
+## 🎯 Next Steps
 
-1. **Configurar CI/CD**
-2. **Implementar Docker**
-3. **Configurar monitoramento**
-4. **Documentar APIs**
-5. **Criar storybook**
+1. **Configure CI/CD**
+2. **Implement Docker**
+3. **Configure Monitoring**
+4. **Document APIs**
+5. **Create storybook**
 
-## 🆘 Suporte
+## 🆘 Support
 
-- **Issues**: Usar GitHub Issues
-- **Discussões**: GitHub Discussions
-- **Documentação**: Pasta `/docs`
-- **Contato**: gabr.almir@gmail.com
+- **Issues**: Use GitHub Issues
+- **Discussions**: GitHub Discussions
+- **Documentation**: `/docs` folder
+- **Contact**: gabr.almir@gmail.com
 
-## :warning: Observação
-Este guia reflete o estado realista do projeto, com partes implementadas e outras planejadas. Consulte os arquivos referenciados para detalhes.
+## :warning: Note
+This guide reflects the realistic state of the project, with parts implemented and others planned. Refer to the referenced files for details.

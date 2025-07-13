@@ -1,46 +1,43 @@
-# :page_facing_up: Documentação - Manuvi
+# Manuvi Documentation
 
-Bem-vindo à documentação do **Manuvi** - Plataforma Inteligente de Planejamento de Produção.
+Welcome to the official documentation for **Manuvi** – an intelligent production-planning platform.
 
-## :card_index_dividers: Índice da Documentação
+## :card_index_dividers: Contents
 
-### :bookmark_tabs: Visão Geral
-- **[README Principal](../README.md)**
-- **[Arquitetura](./ARCHITECTURE.md)**
-- **[Guia de Desenvolvimento](./DEVELOPMENT.md)**
+- **[Project Readme](../README.md)** – high-level overview
+- **[Architecture](./ARCHITECTURE.md)** – technical vision and structure
+- **[Development Guide](./DEVELOPMENT.md)** – local setup and contribution workflow
+- **[API](./API.md)** – REST interface (draft)
+- **[Database](./DATABASE.md)** – data model (draft)
+- **[Authentication](./AUTH.md)** – UI flows and planned backend endpoints
 
-### :hammer_and_wrench: Desenvolvimento
-- **[API Documentation](./API.md)**
-- **[Banco de Dados](./DATABASE.md)**
-- **[Autenticação](./AUTH.md)**
+---
 
-## :information_source: Estado Atual do Projeto
+## :information_source: Current Status
 
-### Frontend
-- Estrutura Next.js 14 (App Router), TypeScript, Tailwind, Zustand ([DEVELOPMENT.md](./DEVELOPMENT.md), [ARCHITECTURE.md](./ARCHITECTURE.md)).
-- Páginas principais implementadas: autenticação (mock), dashboard, produtos, máquinas, ordens, planejamento, relatórios, equipe ([ARCHITECTURE.md](./ARCHITECTURE.md)).
-- Autenticação e dados são simulados/local, sem integração real com backend ([AUTH.md](./AUTH.md)).
-- Testes unitários previstos, cobertura real pode ser limitada ([DEVELOPMENT.md](./DEVELOPMENT.md)).
+### Front-end
+- Next.js 14 (App Router) with TypeScript, Tailwind CSS and Zustand state management ([ARCHITECTURE.md](./ARCHITECTURE.md)).
+- Implemented pages: authentication (mock), dashboard, products, machines, orders, planning, reports and team management.
+- User authentication is **mock-only** – there is no backend integration yet ([AUTH.md](./AUTH.md)).
 
-### Backend
-- Estrutura Python, modelagem de entidades com dataclasses ([ARCHITECTURE.md](./ARCHITECTURE.md)).
-- FastAPI, PostgreSQL, Redis, Alembic estão planejados, mas não necessariamente implementados ([ARCHITECTURE.md](./ARCHITECTURE.md), [DEVELOPMENT.md](./DEVELOPMENT.md)).
-- Endpoints RESTful e autenticação JWT descritos, mas podem não estar 100% funcionais ([API.md](./API.md), [AUTH.md](./AUTH.md)).
-- Banco de dados e lógica de negócio podem estar parcialmente implementados ([DATABASE.md](./DATABASE.md)).
-- Testes e deploy automatizado são planejados ([DEVELOPMENT.md](./DEVELOPMENT.md)).
+### Back-end
+- Python 3.11 project with FastAPI entry-point stub and typed domain entities ([ARCHITECTURE.md](./ARCHITECTURE.md)).
+- Database, JWT authentication and business services are **planned** but not implemented ([API.md](./API.md), [DATABASE.md](./DATABASE.md)).
 
-## :warning: Observação
-Este projeto é open source para fins de portfólio e aprendizado. Futuras versões podem se tornar privadas/comerciais. Veja [README principal](../README.md) para detalhes de licenciamento.
+> :warning: Manuvi is currently an open-source proof of concept used as a portfolio project. Future releases may be published under a different (private or commercial) licence. See the root [README](../README.md) for details.
 
-## :busts_in_silhouette: Público-Alvo
-- Desenvolvedores: React, Next.js, TypeScript, Python, FastAPI ([ARCHITECTURE.md](./ARCHITECTURE.md))
-- Gestores de Produto: arquitetura e roadmap ([ARCHITECTURE.md](./ARCHITECTURE.md))
-- Administradores: setup e configuração ([DEVELOPMENT.md](./DEVELOPMENT.md))
+## :busts_in_silhouette: Intended Audience
 
-## :memo: Como Contribuir
-Consulte [DEVELOPMENT.md](./DEVELOPMENT.md) para instruções e padrões.
+- **Developers** – React, Next.js, TypeScript, Python / FastAPI
+- **Product managers** – high-level architecture and roadmap
+- **System administrators** – local installation guidelines
 
-## :link: Suporte
-Para dúvidas ou licenciamento comercial, entre em contato via [LinkedIn](https://linkedin.com/in/gabrielalmir).
+## :memo: Contribution
+
+Pull requests are welcome. Please follow the conventions described in the [Development Guide](./DEVELOPMENT.md).
+
+## :link: Support & Licensing
+
+For commercial licences or other questions, contact me on [LinkedIn](https://linkedin.com/in/gabrielalmir).
 
 ```
