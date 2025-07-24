@@ -55,7 +55,7 @@ Content-Type: application/json
   "user": {
     "id": 1,
     "email": "usuario@empresa.com",
-    "name": "João Silva",
+    "name": "Gabriel Almir",
     "role": "manager"
   }
 }
@@ -83,7 +83,7 @@ X-Tenant-ID: {tenant_id}
     {
       "id": 1,
       "email": "usuario@empresa.com",
-      "name": "João Silva",
+      "name": "Gabriel Almir",
       "role": "manager",
       "active": true,
       "created_at": "2024-01-01T00:00:00Z",
